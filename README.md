@@ -1,2 +1,2 @@
 # CyberTerminalThought
-random throughts to pop up on the terminal
+random quotes from cyberpunk2077 to pop up in the terminal still a work in progress. 

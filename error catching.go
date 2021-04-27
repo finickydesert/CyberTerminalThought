@@ -1,26 +1,24 @@
 package main
 
-import (  
-    "fmt"
-    "io/ioutil"
-    "errors"
-    "runtime"
-    "os/exec"
-    
+import (
+	"fmt"
+	"errors"
+	"runtime"
+	"os/exec"
 )
 
-//import runtime library of go by running -- go get github.com/go-openapi/runtime
 
-
-func main() {  
-    data, err := ioutil.ReadFile("Bartmoss_Collective.txt")
+func main() {
+   	//write the code which can return error
     if err != nil {
+        //open stack overflow with go error
 		var strs string
 		err := errors.New(err.Error())
 		strs="http://stackoverflow.com/search?q=[go]"+err.Error()
         openbrowser(strs)
-    fmt.Println("Contents of file:", string(data))
+    }
 }
+
 func openbrowser(url string) {
 	var err error
 	err = errors.New("an error message")
